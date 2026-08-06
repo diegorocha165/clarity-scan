@@ -5,17 +5,17 @@ import { FileText } from "lucide-react";
 export const Route = createFileRoute("/laudo")({
   head: () => ({
     meta: [
-      { title: "Exemplo de pré-laudo — Radia" },
+      { title: "Modelo de pré-laudo — Radia" },
       {
         name: "description",
         content:
-          "Veja um exemplo de pré-laudo estruturado gerado pela Radia para radiologia odontológica.",
+          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela Radia.",
       },
-      { property: "og:title", content: "Exemplo de pré-laudo — Radia" },
+      { property: "og:title", content: "Modelo de pré-laudo — Radia" },
       {
         property: "og:description",
         content:
-          "Veja um exemplo de pré-laudo estruturado gerado pela Radia para radiologia odontológica.",
+          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela Radia.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -39,8 +39,8 @@ const exampleReport: ReportData = {
     status: "adequada",
     score: 91,
     observations: [
-      "Posicionamento correto do paciente, sem rotação ou inclinação significativa.",
-      "Contraste e nitidez adequados para avaliação de estruturas dentárias e ósseas.",
+      "Posicionamento adequado do paciente, sem rotação ou inclinação significativa.",
+      "Contraste e nitidez compatíveis com a avaliação de estruturas dentárias e ósseas.",
       "Cobertura anatômica completa, incluindo seios maxilares, côndilos e ramos mandibulares.",
       "Ausência de artefatos de movimento ou superposições relevantes.",
     ],
@@ -66,10 +66,10 @@ function Laudo() {
             <FileText className="h-6 w-6" />
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Exemplo de pré-laudo
+            Modelo de pré-laudo
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            Veja como a Radia organiza a descrição técnica e anatômica para revisão do radiologista.
+            Exemplo de como a Radia organiza a descrição técnica e anatômica para revisão do radiologista.
           </p>
         </div>
 

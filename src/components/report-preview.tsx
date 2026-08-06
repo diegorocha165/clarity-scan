@@ -50,7 +50,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
           </div>
           <div>
             <CardTitle className="text-lg font-semibold">Pré-laudo estruturado</CardTitle>
-            <p className="text-sm text-muted-foreground">Gerado automaticamente pela Radia</p>
+            <p className="text-sm text-muted-foreground">Documento de apoio para revisão profissional</p>
           </div>
         </div>
       </CardHeader>
@@ -76,7 +76,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
           <div className="flex items-center gap-3 rounded-xl border border-border/60 bg-card p-3">
             <Stethoscope className="h-4 w-4 text-muted-foreground" />
             <div>
-              <p className="text-xs text-muted-foreground">Indicação</p>
+              <p className="text-xs text-muted-foreground">Indicação clínica</p>
               <p className="text-sm font-medium text-foreground">{report.exam.indication}</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
             <Badge variant="outline" className={["px-2.5 py-1", statusColors[report.quality.status]].join(" ")}>
               {statusLabels[report.quality.status]}
             </Badge>
-            <span className="text-sm text-muted-foreground">Pontuação: {report.quality.score}/100</span>
+            <span className="text-sm text-muted-foreground">Índice: {report.quality.score}/100</span>
           </div>
           <ul className="mt-3 space-y-1.5">
             {report.quality.observations.map((obs, i) => (
@@ -114,7 +114,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
         </div>
 
         <div>
-          <h4 className="mb-2 text-sm font-semibold text-foreground">Considerações</h4>
+          <h4 className="mb-2 text-sm font-semibold text-foreground">Considerações e recomendações</h4>
           <ul className="space-y-1.5">
             {report.considerations.map((item, i) => (
               <li key={i} className="text-sm leading-relaxed text-muted-foreground">
@@ -125,10 +125,10 @@ export function ReportPreview({ report }: ReportPreviewProps) {
         </div>
 
         <div className="rounded-xl border border-radia/20 bg-radia-muted/30 p-4">
-          <p className="text-sm font-medium text-radia">Revisão obrigatória</p>
+          <p className="text-sm font-medium text-radia">Revisão obrigatória pelo radiologista</p>
           <p className="text-sm text-muted-foreground">
-            Este documento é um pré-laudo de apoio. O radiologista deve revisar, complementar e
-            assinar o laudo final antes de qualquer decisão clínica.
+            Este é um documento de apoio gerado automaticamente. O profissional habilitado deve
+            revisar, complementar e assinar o laudo final antes de qualquer conduta clínica.
           </p>
         </div>
 
