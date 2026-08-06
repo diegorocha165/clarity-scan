@@ -75,7 +75,7 @@ export function AnalysisResult({ result }: AnalysisResultProps) {
                 <Scan className="h-5 w-5" />
               </div>
               <div>
-                <CardTitle className="text-lg font-semibold">Resultado da análise</CardTitle>
+                <CardTitle className="text-lg font-semibold">Avaliação técnica</CardTitle>
                 <p className="text-sm text-muted-foreground">
                   {result.metadata.examType} • {result.metadata.orientation}
                 </p>
@@ -90,7 +90,7 @@ export function AnalysisResult({ result }: AnalysisResultProps) {
         <CardContent className="pt-6">
           <div className="space-y-2">
             <div className="flex items-center justify-between text-sm">
-              <span className="font-medium text-foreground">Pontuação de qualidade</span>
+              <span className="font-medium text-foreground">Índice de qualidade técnica</span>
               <span className="font-semibold text-foreground">{result.score}/100</span>
             </div>
             <Progress value={result.score} className="h-2.5 bg-muted" />

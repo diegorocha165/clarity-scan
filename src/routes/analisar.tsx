@@ -9,17 +9,17 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/analisar")({
   head: () => ({
     meta: [
-      { title: "Analisar radiografia — Radia" },
+      { title: "Avaliação de radiografia — Radia" },
       {
         name: "description",
         content:
-          "Envie uma radiografia panorâmica ou periapical para análise automática de qualidade técnica com a Radia.",
+          "Ferramenta de apoio para avaliação técnica de radiografias panorâmicas e periapicais, com geração de pré-laudo estruturado.",
       },
-      { property: "og:title", content: "Analisar radiografia — Radia" },
+      { property: "og:title", content: "Avaliação de radiografia — Radia" },
       {
         property: "og:description",
         content:
-          "Envie uma radiografia panorâmica ou periapical para análise automática de qualidade técnica com a Radia.",
+          "Ferramenta de apoio para avaliação técnica de radiografias panorâmicas e periapicais, com geração de pré-laudo estruturado.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -112,8 +112,8 @@ function Analisar() {
     setResult(demoResult);
     setReport(demoReport);
     setIsAnalyzing(false);
-    toast.success("Análise concluída", {
-      description: "A qualidade técnica e o pré-laudo estão disponíveis abaixo.",
+    toast.success("Avaliação concluída", {
+      description: "A qualidade técnica e o pré-laudo estão disponíveis para revisão.",
     });
   };
 
@@ -122,11 +122,11 @@ function Analisar() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Analisar radiografia
+            Avaliação de radiografia
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            Envie uma panorâmica ou periapical e receba uma avaliação técnica + pré-laudo
-            estruturado.
+            Submeta uma panorâmica ou periapical para análise técnica e obtenha um pré-laudo
+            estruturado para revisão profissional.
           </p>
         </div>
 

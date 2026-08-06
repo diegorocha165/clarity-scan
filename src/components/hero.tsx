@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Shield, Sparkles, Clock } from "lucide-react";
+import { ArrowRight, Shield, FileCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -12,29 +12,29 @@ export function Hero() {
       <div className="container-tight relative">
         <div className="mx-auto max-w-3xl text-center">
           <Badge variant="secondary" className="mb-6 bg-radia-muted/60 text-radia hover:bg-radia-muted">
-            Suporte inteligente para radiologistas odontológicos
+            Ferramenta de apoio à radiologia odontológica
           </Badge>
 
           <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Qualidade radiográfica
-            <span className="block text-radia">validada por IA</span>
+            Validação técnica de exames
+            <span className="block text-radia">com apoio de IA</span>
           </h1>
 
           <p className="mt-6 text-balance text-lg leading-relaxed text-muted-foreground md:text-xl">
-            A Radia analisa automaticamente radiografias panorâmicas e periapicais, identifica
-            problemas técnicos e gera pré-laudos estruturados — reduzindo retrabalho e aumentando a
-            confiabilidade dos exames.
+            A Radia auxilia o radiologista e o cirurgião-dentista na avaliação da qualidade técnica
+            de radiografias panorâmicas e periapicais, identificando problemas de posicionamento,
+            contraste, nitidez e cobertura antes do laudo final.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button size="lg" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
               <Link to="/analisar">
-                Analisar radiografia
+                Avaliar radiografia
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link to="/laudo">Ver pré-laudo</Link>
+              <Link to="/laudo">Ver modelo de laudo</Link>
             </Button>
           </div>
 
@@ -43,22 +43,22 @@ export function Hero() {
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-teal-muted text-teal">
                 <Clock className="h-4 w-4" />
               </div>
-              <p className="text-sm font-semibold text-foreground">Economia de tempo</p>
-              <p className="mt-1 text-sm text-muted-foreground">Laudos padronizados em segundos.</p>
+              <p className="text-sm font-semibold text-foreground">Fluxo ágil</p>
+              <p className="mt-1 text-sm text-muted-foreground">Pré-laudo estruturado gerado em segundos para revisão.</p>
             </div>
             <div className="rounded-xl border border-border/60 bg-card p-4 text-left shadow-sm">
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-radia-muted text-radia">
                 <Shield className="h-4 w-4" />
               </div>
-              <p className="text-sm font-semibold text-foreground">Mais segurança</p>
-              <p className="mt-1 text-sm text-muted-foreground">Erros técnicos detectados antes do diagnóstico.</p>
+              <p className="text-sm font-semibold text-foreground">Segurança técnica</p>
+              <p className="mt-1 text-sm text-muted-foreground">Erros de aquisição detectados antes da interpretação.</p>
             </div>
             <div className="rounded-xl border border-border/60 bg-card p-4 text-left shadow-sm">
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-teal-muted text-teal">
-                <Sparkles className="h-4 w-4" />
+                <FileCheck className="h-4 w-4" />
               </div>
-              <p className="text-sm font-semibold text-foreground">Suporte, não substituto</p>
-              <p className="mt-1 text-sm text-muted-foreground">O radiologista mantém o controle final.</p>
+              <p className="text-sm font-semibold text-foreground">Responsabilidade clínica</p>
+              <p className="mt-1 text-sm text-muted-foreground">O profissional revisa, complementa e assina o laudo.</p>
             </div>
           </div>
         </div>

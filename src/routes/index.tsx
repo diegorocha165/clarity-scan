@@ -37,21 +37,22 @@ function Index() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Por que a qualidade técnica importa tanto?
+                A qualidade técnica é a base do diagnóstico
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                Estudos mostram taxas de rejeição de até 16% em radiografias periapicais e 11% em
-                bitewings. Em endodontia, a repetição chega a 37%. Cada retrabalho expõe o paciente a
-                mais radiação, atrasa o diagnóstico e aumenta o custo operacional.
+                Estudos clínicos apontam taxas de rejeição de até 16% em radiografias periapicais e
+                repetição de 37% em exames de endodontia. Cada nova exposição aumenta a dose do
+                paciente, retarda o atendimento e eleva os custos da clínica.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                A Radia identifica esses problemas automaticamente, antes que o paciente saia da
-                cadeira, e ajuda o radiologista a produzir laudos mais padronizados e seguros.
+                A Radia atua como uma ferramenta de controle de qualidade, auxiliando o radiologista e
+                o cirurgião-dentista a identificar inadequações técnicas antes da interpretação e do
+                laudo final.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button size="lg" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
                   <Link to="/analisar">
-                    Testar demonstração
+                    Avaliar radiografia
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -72,8 +73,8 @@ function Index() {
                   <p className="mt-1 text-sm text-muted-foreground">clínicas odontológicas no Brasil</p>
                 </div>
                 <div className="rounded-xl bg-secondary p-5 text-center">
-                  <p className="text-3xl font-bold text-foreground">~28%</p>
-                  <p className="mt-1 text-sm text-muted-foreground">CAGR do mercado de IA dental</p>
+                  <p className="text-3xl font-bold text-foreground">LGPD</p>
+                  <p className="mt-1 text-sm text-muted-foreground">privacidade do paciente</p>
                 </div>
               </div>
             </div>
@@ -88,21 +89,21 @@ function Index() {
               <Shield className="h-6 w-6" />
             </div>
             <h2 className="mt-6 text-3xl font-bold tracking-tight text-foreground">
-              Pronto para padronizar seus exames?
+              Aprimore o controle de qualidade da sua clínica
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Experimente a demonstração gratuita e veja como a Radia pode reduzir retrabalho e
-              acelerar seus laudos.
+              Teste a demonstração e veja como a Radia pode integrar-se ao fluxo de trabalho de
+              radiologistas e dentistas, reduzindo retrabalho e padronizando laudos.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <Button size="lg" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
                 <Link to="/analisar">
-                  Começar análise
+                  Acessar avaliação
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link to="/laudo">Ver exemplo de laudo</Link>
+                <Link to="/laudo">Ver modelo de laudo</Link>
               </Button>
             </div>
           </div>
