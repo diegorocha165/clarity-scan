@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { to: "/", label: "Início" },
-  { to: "/analisar", label: "Analisar" },
-  { to: "/laudo", label: "Laudo" },
+  { to: "/analisar", label: "Avaliação" },
+  { to: "/laudo", label: "Modelo de laudo" },
 ];
 
 export function SiteHeader() {
@@ -41,7 +41,7 @@ export function SiteHeader() {
             <Link to="/analisar">Demonstração</Link>
           </Button>
           <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
-            <Link to="/analisar">Começar agora</Link>
+            <Link to="/analisar">Acessar plataforma</Link>
           </Button>
         </div>
 
@@ -75,7 +75,7 @@ export function SiteHeader() {
               </Button>
               <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
                 <Link to="/analisar" onClick={() => setMobileOpen(false)}>
-                  Começar agora
+                  Acessar plataforma
                 </Link>
               </Button>
             </div>

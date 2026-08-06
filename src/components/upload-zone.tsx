@@ -81,10 +81,10 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
           <Upload className="h-6 w-6" />
         </div>
         <p className="mt-4 text-base font-medium text-foreground">
-          Arraste uma radiografia ou clique para selecionar
+          Arraste o arquivo da imagem ou clique para selecionar
         </p>
         <p className="mt-1 text-sm text-muted-foreground">
-          Panorâmicas ou periapicais em JPEG, PNG, TIFF ou DICOM. Até 50 MB.
+          Panorâmicas ou periapicais em JPEG, PNG, TIFF ou DICOM. Limite de 50 MB.
         </p>
       </div>
 
@@ -114,7 +114,7 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
               disabled={isAnalyzing}
               className="bg-radia text-radia-foreground hover:bg-radia/90"
             >
-              {isAnalyzing ? "Analisando..." : "Analisar qualidade"}
+              {isAnalyzing ? "Avaliando..." : "Avaliar qualidade"}
             </Button>
           </div>
         </div>
