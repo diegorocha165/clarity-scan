@@ -4,45 +4,45 @@ import {
   Stethoscope,
   AlertTriangle,
   ClipboardList,
-  Zap,
+  ShieldCheck,
 } from "lucide-react";
 
 const features = [
   {
     icon: Scan,
-    title: "Análise de qualidade técnica",
+    title: "Avaliação técnica automatizada",
     description:
-      "Detecta automaticamente baixa nitidez, contraste inadequado, cortes de estruturas, superposições e posicionamento incorreto em panorâmicas e periapicais.",
+      "Verifica parâmetros críticos de qualidade em radiografias panorâmicas e periapicais: posicionamento, contraste, nitidez, cobertura anatômica e presença de artefatos.",
   },
   {
     icon: AlertTriangle,
-    title: "Alertas antes do retrabalho",
+    title: "Detecção precoce de falhas",
     description:
-      "Sinaliza problemas enquanto o paciente ainda está na cadeira, permitindo refazer o exame na hora e evitar nova exposição à radiação.",
+      "Sinaliza inadequações técnicas ainda durante o exame, reduzindo a necessidade de repetição, exposição adicional do paciente e custos operacionais.",
   },
   {
     icon: ClipboardList,
     title: "Pré-laudo estruturado",
     description:
-      "Gera uma descrição padronizada das estruturas anatômicas visíveis, qualidade técnica e observações relevantes para o radiologista revisar.",
+      "Gera descrição técnica e anatômica padronizada, com campos claros para qualidade da imagem, estruturas visualizadas e recomendações ao radiologista.",
   },
   {
     icon: FileCheck,
-    title: "Padronização de laudos",
+    title: "Padronização institucional",
     description:
-      "Reduz variações entre profissionais e acelera o fluxo de trabalho em clínicas, consultórios e centros de radiologia odontológica.",
+      "Uniformiza a linguagem dos laudos entre diferentes profissionais e unidades, facilitando auditorias, pareceres e acompanhamento de qualidade.",
   },
   {
     icon: Stethoscope,
-    title: "Feito para radiologistas",
+    title: "Apoio ao diagnóstico, não substituto",
     description:
-      "A IA atua como segunda opinião técnica. O profissional revisa, complementa e assina o laudo final com total responsabilidade clínica.",
+      "A ferramenta auxilia o radiologista na análise técnica. O profissional habilitado mantém a responsabilidade final pela interpretação e assinatura do laudo.",
   },
   {
-    icon: Zap,
-    title: "Integração ao fluxo clínico",
+    icon: ShieldCheck,
+    title: "Conformidade e privacidade",
     description:
-      "Compatível com os principais sistemas de imagem odontológica. Upload simples, análise rápida e resultados organizados em uma tela clara.",
+      "Arquitetura pensada para atender à LGPD e às diretrizes da ANVISA para softwares médicos. Dados criptografados em trânsito e em repouso.",
   },
 ];
 
@@ -52,10 +52,10 @@ export function Features() {
       <div className="container-tight">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Como a Radia transforma o fluxo radiográfico
+            Recursos para a prática radiológica
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Tecnologia de apoio para reduzir erros, padronizar laudos e dar mais confiabilidade aos exames.
+            Ferramentas de apoio para aumentar a confiabilidade técnica dos exames e a eficiência do laudo.
           </p>
         </div>
 
