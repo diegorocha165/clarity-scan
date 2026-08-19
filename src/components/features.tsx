@@ -12,64 +12,74 @@ const features = [
     icon: Scan,
     title: "Avaliação técnica automatizada",
     description:
-      "Verifica parâmetros críticos de qualidade em radiografias panorâmicas e periapicais: posicionamento, contraste, nitidez, cobertura anatômica e presença de artefatos.",
+      "Verifica parâmetros críticos em panorâmicas e periapicais: posicionamento, contraste, nitidez, cobertura anatômica e artefatos.",
+    wide: true,
   },
   {
     icon: AlertTriangle,
     title: "Detecção precoce de falhas",
     description:
-      "Sinaliza inadequações técnicas ainda durante o exame, reduzindo a necessidade de repetição, exposição adicional do paciente e custos operacionais.",
+      "Sinaliza inadequações ainda durante o exame, reduzindo repetição, exposição adicional e custo operacional.",
   },
   {
     icon: ClipboardList,
     title: "Pré-laudo estruturado",
     description:
-      "Gera descrição técnica e anatômica padronizada, com campos claros para qualidade da imagem, estruturas visualizadas e recomendações ao radiologista.",
+      "Descrição técnica padronizada com campos de qualidade, estruturas visualizadas e recomendações ao radiologista.",
   },
   {
     icon: FileCheck,
     title: "Padronização institucional",
     description:
-      "Uniformiza a linguagem dos laudos entre diferentes profissionais e unidades, facilitando auditorias, pareceres e acompanhamento de qualidade.",
+      "Uniformiza a linguagem entre profissionais e unidades, facilitando auditorias e acompanhamento de qualidade.",
   },
   {
     icon: Stethoscope,
-    title: "Apoio ao diagnóstico, não substituto",
+    title: "Apoio, nunca substituição",
     description:
-      "A ferramenta auxilia o radiologista na análise técnica. O profissional habilitado mantém a responsabilidade final pela interpretação e assinatura do laudo.",
+      "O profissional habilitado mantém a responsabilidade final pela interpretação e assinatura do laudo.",
   },
   {
     icon: ShieldCheck,
     title: "Conformidade e privacidade",
     description:
-      "Arquitetura pensada para atender à LGPD e às diretrizes da ANVISA para softwares médicos. Dados criptografados em trânsito e em repouso.",
+      "Arquitetura alinhada à LGPD e às diretrizes da ANVISA para software médico, com dados criptografados.",
+    wide: true,
   },
 ];
 
 export function Features() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="border-b border-border/60 py-20 md:py-28">
       <div className="container-tight">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Recursos para a prática radiológica
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Ferramentas de apoio para aumentar a confiabilidade técnica dos exames e a eficiência do laudo.
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="eyebrow text-radia">Plataforma</p>
+            <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Recursos desenhados para a prática radiológica
+            </h2>
+          </div>
+          <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
+            Cada módulo existe para reduzir retrabalho e aumentar a confiabilidade técnica dos exames
+            antes da interpretação clínica.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 md:grid-cols-6">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all hover:border-radia/30 hover:shadow-md"
+              className={[
+                "group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-colors hover:border-radia/40",
+                feature.wide ? "md:col-span-3" : "md:col-span-2",
+              ].join(" ")}
             >
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-radia transition-colors group-hover:bg-radia-muted">
+              <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg border border-border/60 bg-secondary/70 text-radia">
                 <feature.icon className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground">{feature.title}</h3>
+              <h3 className="font-display text-base font-semibold text-foreground">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+              <div className="pointer-events-none absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-radia/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             </div>
           ))}
         </div>
