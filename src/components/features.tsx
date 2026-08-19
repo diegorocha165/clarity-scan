@@ -13,7 +13,6 @@ const features = [
     title: "Avaliação técnica automatizada",
     description:
       "Verifica parâmetros críticos em panorâmicas e periapicais: posicionamento, contraste, nitidez, cobertura anatômica e artefatos.",
-    wide: true,
   },
   {
     icon: AlertTriangle,
@@ -38,6 +37,7 @@ const features = [
     title: "Apoio, nunca substituição",
     description:
       "O profissional habilitado mantém a responsabilidade final pela interpretação e assinatura do laudo.",
+    wide: true,
   },
   {
     icon: ShieldCheck,
