@@ -5,9 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system: Radia — AI para radiologia odontológica.
- * Paleta médico-tecnológica: azul profundo, branco clínico, teal diagnóstico.
- * Sem roxo. Sem gradientes genéricos. Foco em confiança, precisão e clareza.
+ * AktIA — design system
+ * SaaS de saúde: base clara clínica, azul-tecnológico + teal diagnóstico.
  */
 
 @theme inline {
@@ -17,7 +16,6 @@
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -40,71 +38,80 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  /* Semantic tokens exclusivos da Radia */
-  --color-radia: var(--radia);
-  --color-radia-foreground: var(--radia-foreground);
-  --color-radia-muted: var(--radia-muted);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+
+  /* Tokens semânticos AktIA */
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
   --color-teal: var(--teal);
   --color-teal-foreground: var(--teal-foreground);
-  --color-teal-muted: var(--teal-muted);
+  --color-teal-soft: var(--teal-soft);
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
+  --color-success-soft: var(--success-soft);
   --color-warning: var(--warning);
   --color-warning-foreground: var(--warning-foreground);
-  --color-info: var(--info);
-  --color-info-foreground: var(--info-foreground);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-danger-soft: var(--danger-soft);
 
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.875rem;
 
   --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-display: "Sora", system-ui, sans-serif;
 
-  /* Dark clinical navy — default */
-  --background: oklch(0.17 0.028 255);
-  --foreground: oklch(0.97 0.006 250);
-  --card: oklch(0.21 0.03 255);
-  --card-foreground: oklch(0.97 0.006 250);
-  --popover: oklch(0.21 0.03 255);
-  --popover-foreground: oklch(0.97 0.006 250);
-  --primary: oklch(0.72 0.11 200);
-  --primary-foreground: oklch(0.17 0.03 250);
-  --secondary: oklch(0.245 0.03 255);
-  --secondary-foreground: oklch(0.93 0.01 250);
-  --muted: oklch(0.245 0.03 255);
-  --muted-foreground: oklch(0.72 0.022 250);
-  --accent: oklch(0.26 0.035 255);
-  --accent-foreground: oklch(0.95 0.01 250);
-  --destructive: oklch(0.63 0.19 25);
-  --destructive-foreground: oklch(0.99 0.005 250);
-  --border: oklch(1 0 0 / 11%);
-  --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.72 0.11 200);
-
-  --radia: oklch(0.72 0.11 200);
-  --radia-foreground: oklch(0.17 0.03 250);
-  --radia-muted: oklch(0.28 0.05 215);
-  --teal: oklch(0.78 0.13 175);
-  --teal-foreground: oklch(0.17 0.03 250);
-  --teal-muted: oklch(0.28 0.05 185);
-  --success: oklch(0.72 0.15 155);
-  --success-foreground: oklch(0.15 0.03 250);
-  --warning: oklch(0.8 0.13 85);
-  --warning-foreground: oklch(0.22 0.05 80);
-  --info: oklch(0.72 0.11 235);
-  --info-foreground: oklch(0.15 0.03 250);
-}
-
-.light {
-  --background: oklch(0.985 0.003 240);
-  --foreground: oklch(0.17 0.035 250);
+  --background: oklch(0.985 0.004 240);
+  --foreground: oklch(0.24 0.03 252);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.17 0.035 250);
-  --border: oklch(0.9 0.015 250);
+  --card-foreground: oklch(0.24 0.03 252);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.03 252);
+  --primary: oklch(0.55 0.15 248);
+  --primary-foreground: oklch(0.99 0.004 240);
+  --secondary: oklch(0.955 0.008 245);
+  --secondary-foreground: oklch(0.32 0.035 252);
+  --muted: oklch(0.96 0.006 245);
+  --muted-foreground: oklch(0.53 0.022 250);
+  --accent: oklch(0.95 0.02 235);
+  --accent-foreground: oklch(0.32 0.05 250);
+  --destructive: oklch(0.58 0.2 25);
+  --destructive-foreground: oklch(0.99 0.004 240);
+  --border: oklch(0.915 0.01 248);
+  --input: oklch(0.915 0.01 248);
+  --ring: oklch(0.55 0.15 248);
+
+  --sidebar: oklch(0.995 0.003 245);
+  --sidebar-foreground: oklch(0.32 0.03 252);
+  --sidebar-accent: oklch(0.95 0.025 240);
+  --sidebar-accent-foreground: oklch(0.36 0.09 250);
+  --sidebar-border: oklch(0.92 0.01 248);
+
+  --brand: oklch(0.55 0.15 248);
+  --brand-foreground: oklch(0.99 0.004 240);
+  --brand-soft: oklch(0.95 0.03 245);
+  --teal: oklch(0.68 0.11 195);
+  --teal-foreground: oklch(0.99 0.004 240);
+  --teal-soft: oklch(0.95 0.03 195);
+  --success: oklch(0.6 0.13 155);
+  --success-foreground: oklch(0.99 0.004 240);
+  --success-soft: oklch(0.95 0.04 155);
+  --warning: oklch(0.72 0.14 75);
+  --warning-foreground: oklch(0.25 0.05 70);
+  --warning-soft: oklch(0.96 0.05 85);
+  --danger: oklch(0.58 0.2 25);
+  --danger-foreground: oklch(0.99 0.004 240);
+  --danger-soft: oklch(0.96 0.04 25);
 }
 
 @layer base {
@@ -122,7 +129,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -132,35 +139,26 @@
 
 @utility container-tight {
   width: 100%;
-  max-width: 80rem;
+  max-width: 82rem;
   margin-inline: auto;
   padding-inline: 1.5rem;
 }
 
-@utility gradient-radia {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal) 100%);
+@utility gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-teal) 100%);
 }
-
-@utility glow-radia {
-  box-shadow: 0 0 40px -10px oklch(0.55 0.11 255 / 0.35);
-}
-
-@utility glow-teal {
-  box-shadow: 0 0 40px -10px oklch(0.55 0.11 195 / 0.35);
-}
-
 
 @utility grid-clinical {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.045) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, oklch(0.55 0.15 248 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.55 0.15 248 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-@utility surface-elevated {
-  background: linear-gradient(180deg, oklch(1 0 0 / 0.05), oklch(1 0 0 / 0.015));
-  border: 1px solid oklch(1 0 0 / 0.1);
-  backdrop-filter: blur(8px);
+@utility shadow-card {
+  box-shadow:
+    0 1px 2px oklch(0.24 0.03 252 / 0.04),
+    0 8px 24px -12px oklch(0.24 0.03 252 / 0.12);
 }
 
 @utility eyebrow {
