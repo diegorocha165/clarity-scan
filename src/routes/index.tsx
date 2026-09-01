@@ -7,13 +7,13 @@ import { ArrowRight, Upload, ScanLine, FileSignature } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Radia — Controle de qualidade radiográfica com IA" },
+      { title: "AktIA — Controle de qualidade radiográfica com IA" },
       {
         name: "description",
         content:
-          "Radia avalia a qualidade técnica de radiografias panorâmicas e periapicais e gera pré-laudos estruturados para radiologistas e cirurgiões-dentistas.",
+          "AktIA avalia a qualidade técnica de radiografias panorâmicas e periapicais e gera pré-laudos estruturados para radiologistas e cirurgiões-dentistas.",
       },
-      { property: "og:title", content: "Radia — Controle de qualidade radiográfica com IA" },
+      { property: "og:title", content: "AktIA — Controle de qualidade radiográfica com IA" },
       {
         property: "og:description",
         content:
@@ -64,7 +64,7 @@ function Index() {
             {steps.map((s) => (
               <div key={s.step} className="bg-card p-8">
                 <div className="flex items-center justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/70 text-radia">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/70 text-brand">
                     <s.icon className="h-5 w-5" />
                   </div>
                   <span className="font-display text-sm font-semibold text-muted-foreground/60">{s.step}</span>
@@ -80,7 +80,7 @@ function Index() {
       <section className="border-b border-border/60 py-20 md:py-28">
         <div className="container-tight grid items-center gap-14 lg:grid-cols-2">
           <div>
-            <p className="eyebrow text-radia">Evidência</p>
+            <p className="eyebrow text-brand">Evidência</p>
             <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
               A qualidade técnica é a base do diagnóstico
             </h2>
@@ -90,10 +90,10 @@ function Index() {
               retarda o atendimento e eleva os custos da clínica.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              A Radia atua como camada de controle de qualidade, identificando inadequações técnicas
+              A AktIA atua como camada de controle de qualidade, identificando inadequações técnicas
               antes da interpretação e do laudo final.
             </p>
-            <Button size="lg" className="mt-8 bg-radia text-radia-foreground hover:bg-radia/90" asChild>
+            <Button size="lg" className="mt-8 bg-brand text-brand-foreground hover:bg-brand/90" asChild>
               <Link to="/analisar">
                 Avaliar radiografia
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -103,7 +103,7 @@ function Index() {
 
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border/60 bg-border/60">
             {[
-              { k: "16%", v: "rejeição média em periapicais", accent: "text-radia" },
+              { k: "16%", v: "rejeição média em periapicais", accent: "text-brand" },
               { k: "37%", v: "repetição em endodontia", accent: "text-teal" },
               { k: "61 mil", v: "clínicas odontológicas no Brasil", accent: "text-foreground" },
               { k: "LGPD", v: "privacidade do paciente por padrão", accent: "text-foreground" },
@@ -128,11 +128,11 @@ function Index() {
                 Aprimore o controle de qualidade da sua clínica
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                Teste a demonstração e veja como a Radia se integra ao fluxo de radiologistas e
+                Teste a demonstração e veja como a AktIA se integra ao fluxo de radiologistas e
                 dentistas, reduzindo retrabalho e padronizando laudos.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button size="lg" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
+                <Button size="lg" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
                   <Link to="/analisar">
                     Acessar avaliação
                     <ArrowRight className="ml-2 h-4 w-4" />

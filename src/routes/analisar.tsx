@@ -9,13 +9,13 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/analisar")({
   head: () => ({
     meta: [
-      { title: "Avaliação de radiografia — Radia" },
+      { title: "Avaliação de radiografia — AktIA" },
       {
         name: "description",
         content:
           "Ferramenta de apoio para avaliação técnica de radiografias panorâmicas e periapicais, com geração de pré-laudo estruturado.",
       },
-      { property: "og:title", content: "Avaliação de radiografia — Radia" },
+      { property: "og:title", content: "Avaliação de radiografia — AktIA" },
       {
         property: "og:description",
         content:

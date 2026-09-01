@@ -27,17 +27,17 @@ export function Hero() {
 
             <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Validação técnica de exames,
-              <span className="block text-radia">antes do laudo sair.</span>
+              <span className="block text-brand">antes do laudo sair.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A Radia apoia radiologistas e cirurgiões-dentistas na avaliação da qualidade técnica de
+              A AktIA apoia radiologistas e cirurgiões-dentistas na avaliação da qualidade técnica de
               panorâmicas e periapicais — posicionamento, contraste, nitidez e cobertura — e entrega um
               pré-laudo estruturado pronto para revisão profissional.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
+              <Button size="lg" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
                 <Link to="/analisar">
                   Avaliar radiografia
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -67,7 +67,7 @@ export function Hero() {
               <div className="rounded-xl bg-card">
                 <div className="flex items-center justify-between border-b border-border/60 px-5 py-3.5">
                   <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-                    <Activity className="h-4 w-4 text-radia" />
+                    <Activity className="h-4 w-4 text-brand" />
                     Painel de avaliação
                   </div>
                   <span className="rounded-md bg-warning/15 px-2 py-1 text-[11px] font-semibold text-warning">
@@ -84,7 +84,7 @@ export function Hero() {
                     <p className="text-xs text-muted-foreground">Panorâmica · 2 achados</p>
                   </div>
                   <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-secondary">
-                    <div className="h-full w-[72%] rounded-full bg-gradient-to-r from-radia to-teal" />
+                    <div className="h-full w-[72%] rounded-full bg-gradient-to-r from-brand to-teal" />
                   </div>
 
                   <ul className="mt-5 space-y-2.5">

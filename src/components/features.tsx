@@ -54,7 +54,7 @@ export function Features() {
       <div className="container-tight">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="eyebrow text-radia">Plataforma</p>
+            <p className="eyebrow text-brand">Plataforma</p>
             <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
               Recursos desenhados para a prática radiológica
             </h2>
@@ -70,16 +70,16 @@ export function Features() {
             <div
               key={feature.title}
               className={[
-                "group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-colors hover:border-radia/40",
+                "group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-colors hover:border-brand/40",
                 feature.wide ? "md:col-span-3" : "md:col-span-2",
               ].join(" ")}
             >
-              <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg border border-border/60 bg-secondary/70 text-radia">
+              <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg border border-border/60 bg-secondary/70 text-brand">
                 <feature.icon className="h-5 w-5" />
               </div>
               <h3 className="font-display text-base font-semibold text-foreground">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
-              <div className="pointer-events-none absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-radia/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-brand/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             </div>
           ))}
         </div>

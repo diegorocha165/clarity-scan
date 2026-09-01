@@ -27,7 +27,7 @@ function NotFoundComponent() {
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-radia px-4 py-2 text-sm font-medium text-radia-foreground transition-colors hover:bg-radia/90"
+            className="inline-flex items-center justify-center rounded-md bg-brand px-4 py-2 text-sm font-medium text-brand-foreground transition-colors hover:bg-brand/90"
           >
             Voltar ao início
           </Link>
@@ -59,7 +59,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
               router.invalidate();
               reset();
             }}
-            className="inline-flex items-center justify-center rounded-md bg-radia px-4 py-2 text-sm font-medium text-radia-foreground transition-colors hover:bg-radia/90"
+            className="inline-flex items-center justify-center rounded-md bg-brand px-4 py-2 text-sm font-medium text-brand-foreground transition-colors hover:bg-brand/90"
           >
             Tentar novamente
           </button>
@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Radia — IA para Radiologia Odontológica" },
-      { name: "description", content: "Radia analisa automaticamente a qualidade de radiografias panorâmicas e periapicais e gera pré-laudos estruturados para clínicas odontológicas." },
-      { name: "author", content: "Radia" },
-      { property: "og:title", content: "Radia — IA para Radiologia Odontológica" },
+      { title: "AktIA — IA para Radiologia Odontológica" },
+      { name: "description", content: "AktIA analisa automaticamente a qualidade de radiografias panorâmicas e periapicais e gera pré-laudos estruturados para clínicas odontológicas." },
+      { name: "author", content: "AktIA" },
+      { property: "og:title", content: "AktIA — IA para Radiologia Odontológica" },
       { property: "og:description", content: "Análise automática de qualidade radiográfica e pré-laudos estruturados para clínicas odontológicas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@radia" },
+      { name: "twitter:site", content: "@aktia" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

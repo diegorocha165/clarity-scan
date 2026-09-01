@@ -16,10 +16,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container-tight flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-foreground">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-radia text-radia-foreground">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-brand-foreground">
             <Activity className="h-4 w-4" />
           </div>
-          <span className="text-lg font-semibold tracking-tight">Radia</span>
+          <span className="text-lg font-semibold tracking-tight">AktIA</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -40,7 +40,7 @@ export function SiteHeader() {
           <Button variant="ghost" size="sm" asChild>
             <Link to="/analisar">Demonstração</Link>
           </Button>
-          <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
+          <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
             <Link to="/analisar">Acessar plataforma</Link>
           </Button>
         </div>
@@ -73,7 +73,7 @@ export function SiteHeader() {
                   Demonstração
                 </Link>
               </Button>
-              <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
+              <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
                 <Link to="/analisar" onClick={() => setMobileOpen(false)}>
                   Acessar plataforma
                 </Link>

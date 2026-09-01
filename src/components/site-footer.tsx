@@ -7,10 +7,10 @@ export function SiteFooter() {
       <div className="container-tight grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2 text-foreground">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-radia text-radia-foreground">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-brand-foreground">
               <Activity className="h-4 w-4" />
             </div>
-            <span className="font-display text-lg font-semibold tracking-tight">Radia</span>
+            <span className="font-display text-lg font-semibold tracking-tight">AktIA</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Suporte inteligente ao controle de qualidade em radiologia odontológica. Ferramenta de
@@ -38,7 +38,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border/60">
         <div className="container-tight flex flex-col items-center justify-between gap-3 py-6 text-xs text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} Radia. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} AktIA. Todos os direitos reservados.</p>
           <p>Ferramenta de apoio à decisão — não substitui avaliação profissional.</p>
         </div>
       </div>
