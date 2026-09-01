@@ -5,17 +5,17 @@ import { FileText } from "lucide-react";
 export const Route = createFileRoute("/laudo")({
   head: () => ({
     meta: [
-      { title: "Modelo de pré-laudo — Radia" },
+      { title: "Modelo de pré-laudo — AktIA" },
       {
         name: "description",
         content:
-          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela Radia.",
+          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela AktIA.",
       },
-      { property: "og:title", content: "Modelo de pré-laudo — Radia" },
+      { property: "og:title", content: "Modelo de pré-laudo — AktIA" },
       {
         property: "og:description",
         content:
-          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela Radia.",
+          "Veja um modelo de pré-laudo estruturado para radiologia odontológica gerado pela AktIA.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -62,14 +62,14 @@ function Laudo() {
     <div className="container-tight py-10 md:py-16">
       <div className="mx-auto max-w-3xl">
         <div className="mb-8 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-radia-muted text-radia">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-muted text-brand">
             <FileText className="h-6 w-6" />
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Modelo de pré-laudo
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            Exemplo de como a Radia organiza a descrição técnica e anatômica para revisão do radiologista.
+            Exemplo de como a AktIA organiza a descrição técnica e anatômica para revisão do radiologista.
           </p>
         </div>
 

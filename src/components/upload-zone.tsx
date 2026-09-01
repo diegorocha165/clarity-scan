@@ -66,8 +66,8 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
         className={[
           "relative flex flex-col items-center justify-center rounded-2xl border-2 border-dashed p-10 text-center transition-all",
           dragActive
-            ? "border-radia bg-radia-muted/40"
-            : "border-border/80 bg-card hover:border-radia/40 hover:bg-accent/50",
+            ? "border-brand bg-brand-muted/40"
+            : "border-border/80 bg-card hover:border-brand/40 hover:bg-accent/50",
         ].join(" ")}
       >
         <input
@@ -77,7 +77,7 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
           onChange={onInputChange}
           className="absolute inset-0 cursor-pointer opacity-0"
         />
-        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-radia-muted text-radia">
+        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-muted text-brand">
           <Upload className="h-6 w-6" />
         </div>
         <p className="mt-4 text-base font-medium text-foreground">
@@ -92,7 +92,7 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
         <div className="flex items-center justify-between rounded-xl border border-border/60 bg-card p-4">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
-              <FileImage className="h-5 w-5 text-radia" />
+              <FileImage className="h-5 w-5 text-brand" />
             </div>
             <div className="min-w-0">
               <p className="truncate text-sm font-medium text-foreground">{file.name}</p>
@@ -112,7 +112,7 @@ export function UploadZone({ onAnalyze, isAnalyzing }: UploadZoneProps) {
             <Button
               onClick={() => onAnalyze(file)}
               disabled={isAnalyzing}
-              className="bg-radia text-radia-foreground hover:bg-radia/90"
+              className="bg-brand text-brand-foreground hover:bg-brand/90"
             >
               {isAnalyzing ? "Avaliando..." : "Avaliar qualidade"}
             </Button>

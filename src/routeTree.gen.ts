@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AnalisarRouteImport } from './routes/analisar'
+import { Route as CadastroRouteImport } from './routes/cadastro'
+import { Route as EntrarRouteImport } from './routes/entrar'
 import { Route as LaudoRouteImport } from './routes/laudo'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +25,16 @@ const AnalisarRoute = AnalisarRouteImport.update({
   path: '/analisar',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CadastroRoute = CadastroRouteImport.update({
+  id: '/cadastro',
+  path: '/cadastro',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EntrarRoute = EntrarRouteImport.update({
+  id: '/entrar',
+  path: '/entrar',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LaudoRoute = LaudoRouteImport.update({
   id: '/laudo',
   path: '/laudo',
@@ -32,30 +44,38 @@ const LaudoRoute = LaudoRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/analisar': typeof AnalisarRoute
+  '/cadastro': typeof CadastroRoute
+  '/entrar': typeof EntrarRoute
   '/laudo': typeof LaudoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/analisar': typeof AnalisarRoute
+  '/cadastro': typeof CadastroRoute
+  '/entrar': typeof EntrarRoute
   '/laudo': typeof LaudoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/analisar': typeof AnalisarRoute
+  '/cadastro': typeof CadastroRoute
+  '/entrar': typeof EntrarRoute
   '/laudo': typeof LaudoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/analisar' | '/laudo'
+  fullPaths: '/' | '/analisar' | '/cadastro' | '/entrar' | '/laudo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/analisar' | '/laudo'
-  id: '__root__' | '/' | '/analisar' | '/laudo'
+  to: '/' | '/analisar' | '/cadastro' | '/entrar' | '/laudo'
+  id: '__root__' | '/' | '/analisar' | '/cadastro' | '/entrar' | '/laudo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AnalisarRoute: typeof AnalisarRoute
+  CadastroRoute: typeof CadastroRoute
+  EntrarRoute: typeof EntrarRoute
   LaudoRoute: typeof LaudoRoute
 }
 
@@ -75,6 +95,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AnalisarRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cadastro': {
+      id: '/cadastro'
+      path: '/cadastro'
+      fullPath: '/cadastro'
+      preLoaderRoute: typeof CadastroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/entrar': {
+      id: '/entrar'
+      path: '/entrar'
+      fullPath: '/entrar'
+      preLoaderRoute: typeof EntrarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/laudo': {
       id: '/laudo'
       path: '/laudo'
@@ -88,6 +122,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalisarRoute: AnalisarRoute,
+  CadastroRoute: CadastroRoute,
+  EntrarRoute: EntrarRoute,
   LaudoRoute: LaudoRoute,
 }
 export const routeTree = rootRouteImport

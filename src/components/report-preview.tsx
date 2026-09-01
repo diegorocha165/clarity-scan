@@ -45,7 +45,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
     <Card className="overflow-hidden border-border/60 shadow-sm">
       <CardHeader className="bg-secondary/30">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-radia-muted text-radia">
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-muted text-brand">
             <FileText className="h-5 w-5" />
           </div>
           <div>
@@ -124,8 +124,8 @@ export function ReportPreview({ report }: ReportPreviewProps) {
           </ul>
         </div>
 
-        <div className="rounded-xl border border-radia/20 bg-radia-muted/30 p-4">
-          <p className="text-sm font-medium text-radia">Revisão obrigatória pelo radiologista</p>
+        <div className="rounded-xl border border-brand/20 bg-brand-muted/30 p-4">
+          <p className="text-sm font-medium text-brand">Revisão obrigatória pelo radiologista</p>
           <p className="text-sm text-muted-foreground">
             Este é um documento de apoio gerado automaticamente. O profissional habilitado deve
             revisar, complementar e assinar o laudo final antes de qualquer conduta clínica.
@@ -136,7 +136,7 @@ export function ReportPreview({ report }: ReportPreviewProps) {
           <Button variant="outline" className="flex-1">
             Copiar laudo
           </Button>
-          <Button className="flex-1 bg-radia text-radia-foreground hover:bg-radia/90">
+          <Button className="flex-1 bg-brand text-brand-foreground hover:bg-brand/90">
             Exportar PDF
           </Button>
         </div>

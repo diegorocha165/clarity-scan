@@ -16,10 +16,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container-tight flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-foreground">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-radia text-radia-foreground">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-brand-foreground">
             <Activity className="h-4 w-4" />
           </div>
-          <span className="text-lg font-semibold tracking-tight">Radia</span>
+          <span className="text-lg font-semibold tracking-tight">AktIA</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -38,10 +38,10 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="ghost" size="sm" asChild>
-            <Link to="/analisar">Demonstração</Link>
+            <Link to="/entrar">Entrar</Link>
           </Button>
-          <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
-            <Link to="/analisar">Acessar plataforma</Link>
+          <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
+            <Link to="/cadastro">Cadastre-se</Link>
           </Button>
         </div>
 
@@ -69,13 +69,13 @@ export function SiteHeader() {
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border/60 pt-3">
               <Button variant="outline" size="sm" asChild>
-                <Link to="/analisar" onClick={() => setMobileOpen(false)}>
-                  Demonstração
+                <Link to="/entrar" onClick={() => setMobileOpen(false)}>
+                  Entrar
                 </Link>
               </Button>
-              <Button size="sm" className="bg-radia text-radia-foreground hover:bg-radia/90" asChild>
-                <Link to="/analisar" onClick={() => setMobileOpen(false)}>
-                  Acessar plataforma
+              <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
+                <Link to="/cadastro" onClick={() => setMobileOpen(false)}>
+                  Cadastre-se
                 </Link>
               </Button>
             </div>
