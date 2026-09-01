@@ -38,10 +38,10 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="ghost" size="sm" asChild>
-            <Link to="/analisar">Demonstração</Link>
+            <Link to="/entrar">Entrar</Link>
           </Button>
           <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
-            <Link to="/analisar">Acessar plataforma</Link>
+            <Link to="/cadastro">Cadastre-se</Link>
           </Button>
         </div>
 
@@ -69,13 +69,13 @@ export function SiteHeader() {
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border/60 pt-3">
               <Button variant="outline" size="sm" asChild>
-                <Link to="/analisar" onClick={() => setMobileOpen(false)}>
-                  Demonstração
+                <Link to="/entrar" onClick={() => setMobileOpen(false)}>
+                  Entrar
                 </Link>
               </Button>
               <Button size="sm" className="bg-brand text-brand-foreground hover:bg-brand/90" asChild>
-                <Link to="/analisar" onClick={() => setMobileOpen(false)}>
-                  Acessar plataforma
+                <Link to="/cadastro" onClick={() => setMobileOpen(false)}>
+                  Cadastre-se
                 </Link>
               </Button>
             </div>
